@@ -62,13 +62,19 @@ window.SITE_DATA = {
     interests: [
       { en: " Football", ar: " كرة القدم" },
       { en: "3D Web Animations (Three.js)", ar: " رسومات الويب ثلاثية الأبعاد" },
-      { en: "Video Games", ar: "ألعاب الفيديو " }
+      { en: "Video Games", ar: "ألعاب الفيديو " },
+      { en: "Problem Solving", ar: "حل المشكلات البرمجية" },
+{ en: "UI/UX Design", ar: "تصميم واجهات وتجربة المستخدم" },
+{ en: "Database Architecture", ar: "هندسة قواعد البيانات" },
+{ en: "Open Source Contributions", ar: "المساهمة في المشاريع مفتوحة الصورس" },
+{ en: "Chess", ar: "لعبة الشطرنج" },
+{ en: "Reading Tech Blogs", ar: "قراءة المدونات التقنية" }
     ],
 // value: type a number (e.g. "12") to get a count-up animation, or any text.
     stats: [
         { value: "2+", label: { en: "Years of Experience", ar: "سنوات الخبرة" } },
         { value: "6+", label: { en: "Projects Completed", ar: "المشاريع المنجزة" } },
-        { value: "3.75", label: { en: "University GPA", ar: "المعدل الجامعي" } },
+        { value: "90.50", label: { en: "University GPA", ar: "المعدل الجامعي" } },
         { value: "10+", label: { en: "Technologies Mastered", ar: "تقنيات متقنة" } }
     ],
     // Decorative floating badges around the hero photo (just text, not claims)
@@ -83,7 +89,7 @@ social: [
     { id: "github", label: "GitHub", icon: "github", url: "https://github.com/saleemriyad983-sys" },
     { id: "linkedin", label: "LinkedIn", icon: "linkedin", url: "https://www.linkedin.com/in/saleem-riyad-b2aa64440?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
     { id: "instagram", label: "Instagram", icon: "instagram", url: "https://www.instagram.com/saleem_r_2005?xtok=MTNzZGNmNHdjOWQ5Mg==" },
-    { id: "other", label: "Website", icon: "link", url: "" }
+    { id: "other", label: "Website", icon: "link", url: "https://saleemriyad983-sys.github.io/my-frist-project/" }
 ],
 
   /* ---------------- Skills ----------------
