@@ -137,7 +137,7 @@ social: [
     { id: "other",  label: { en: "Other",  ar: "أخرى" } }
   ],
 
-  /* ---------------- Projects ----------------
+/* ---------------- Projects ----------------
    * To add one: copy a block, give it a new unique id, fill it in.
    * image : "assets/images/projects/my-project.png"  ("" = placeholder)
    * links : leave "" for no link (button shows disabled)                  */
