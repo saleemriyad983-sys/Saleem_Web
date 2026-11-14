@@ -67,7 +67,6 @@ window.SITE_DATA = {
 { en: "UI/UX Design", ar: "تصميم واجهات وتجربة المستخدم" },
 { en: "Database Architecture", ar: "هندسة قواعد البيانات" },
 { en: "Open Source Contributions", ar: "المساهمة في المشاريع مفتوحة الصورس" },
-{ en: "Chess", ar: "لعبة الشطرنج" },
 { en: "Reading Tech Blogs", ar: "قراءة المدونات التقنية" }
     ],
 // value: type a number (e.g. "12") to get a count-up animation, or any text.
@@ -144,38 +143,53 @@ social: [
    * links : leave "" for no link (button shows disabled)                  */
   projects: [
     {
-      id: "project-01",
+      id: "smilecare-dental-system",
       category: "web",
-      title:       { en: "Project 01", ar: "المشروع 01" },
-      description: { en: "Short project description", ar: "وصف مختصر للمشروع" },
-      details:     { en: "Full project details: goals, your role, challenges, results.",
-                     ar: "تفاصيل المشروع: الأهداف، دورك، التحديات، النتائج." },
-      tech: ["HTML5", "CSS3", "JavaScript"],
-      image: "",
-      links: { demo: "", source: "" }
+      title: { 
+        en: "SmileCare Dental Clinic Management System", 
+        ar: "نظام إدارة عيادة سمايل كير لطب الأسنان" 
+      },
+      description: { 
+        en: "A comprehensive web-based dental clinic management system featuring patient records, appointment scheduling, and service management.", 
+        ar: "نظام إلكتروني متكامل لإدارة عيادات الأسنان يتضمن سجلات المرضى، جدولة المواعيد، وإدارة الخدمات الطبية." 
+      },
+      details: {
+        en: "Developed a full-stack dental clinic management portal to streamline patient workflows, doctor appointments, and medical records. Built with PHP, MySQL, and Bootstrap 5 for a secure, responsive, and user-friendly experience.",
+        ar: "تطوير بوابة إلكترونية متكاملة لإدارة عيادات الأسنان لتنظيم سير عمل المرضى، مواعيد الأطباء، والسجلات الطبية. تم بناؤه باستخدام PHP و MySQL و Bootstrap 5 لتقديم تجربة مستخدم آمنة، متجاوبة، وسهلة الاستخدام.",
+      },
+      tech: ["PHP", "MySQL", "Bootstrap 5", "JavaScript", "HTML5", "CSS3"],
+      image: "../assets/images/اسنان.png",
+      links: { 
+        demo: "https://smilecare-demo.infinityfree.io/signup.php", 
+        source: "" 
+      },
     },
     {
       id: "project-02",
       category: "backend",
-      title:       { en: "Project 02", ar: "المشروع 02" },
+      title: { en: "Project 02", ar: "المشروع 02" },
       description: { en: "Short project description", ar: "وصف مختصر للمشروع" },
-      details:     { en: "Full project details: goals, your role, challenges, results.",
-                     ar: "تفاصيل المشروع: الأهداف، دورك، التحديات، النتائج." },
+      details: {
+        en: "Full project details: goals, your role, challenges, results.",
+        ar: "تفاصيل المشروع: الأهداف، دورك، التحديات، النتائج.",
+      },
       tech: ["PHP", "MySQL"],
       image: "",
-      links: { demo: "", source: "" }
+      links: { demo: "", source: "" },
     },
     {
       id: "project-03",
       category: "web",
-      title:       { en: "Project 03", ar: "المشروع 03" },
+      title: { en: "Project 03", ar: "المشروع 03" },
       description: { en: "Short project description", ar: "وصف مختصر للمشروع" },
-      details:     { en: "Full project details: goals, your role, challenges, results.",
-                     ar: "تفاصيل المشروع: الأهداف، دورك، التحديات، النتائج." },
+      details: {
+        en: "Full project details: goals, your role, challenges, results.",
+        ar: "تفاصيل المشروع: الأهداف، دورك، التحديات، النتائج.",
+      },
       tech: ["Vue.js", "Bootstrap"],
       image: "",
-      links: { demo: "", source: "" }
-    }
+      links: { demo: "", source: "" },
+    },
   ],
 
 /* ---------------- Certificates ----------------
