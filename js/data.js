@@ -38,7 +38,7 @@ window.SITE_DATA = {
       en: ["Web Software Engineer", "Frontend Development", "Backend Development"],
       ar: ["مهندس برمجيات ويب", "تطوير الواجهات الأمامية", "تطوير الأنظمة الخلفية"]
     },
-   photo: "assets/images/WhatsApp Image 2026-11-01 at 12.43.57 PM.jpeg",             // e.g. "assets/images/profile.jpg"
+   photo: "assets/images/dimond.jpeg",             // e.g. "assets/images/profile.jpg"
     email: "saleemriyad983@gmail.com",                // e.g. "you@example.com"  (shown in Contact + used for mailto)
     bio: {
       en: "Web Software Engineer specialized in full-stack web application development, combining robust backend architecture with modern, responsive frontend interfaces ",
