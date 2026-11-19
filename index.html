@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio | Web Software Engineer</title>
+    <meta
+      name="description"
+      content="Personal portfolio of a Web Software Engineer: skills, projects, certificates and contact."
+    />
+    <meta name="theme-color" content="#02040c" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Portfolio | Web Software Engineer" />
+    <meta
+      property="og:description"
+      content="Personal portfolio of a Web Software Engineer: skills, projects, certificates and contact."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23071029'/%3E%3Cpath d='m24 22-10 10 10 10M40 22l10 10-10 10' fill='none' stroke='%234cc9ff' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
+    />
+
+    <!-- Apply saved language BEFORE first paint (prevents flash / wrong direction) -->
+    <script>
+      (function () {
+        try {
+          var l = localStorage.getItem("lang");
+          if (l === "ar" || l === "en") {
+            document.documentElement.lang = l;
+            document.documentElement.dir = l === "ar" ? "rtl" : "ltr";
+          }
+        } catch (e) {}
+        document.documentElement.classList.add("js");
+      })();
+    </script>
+
+    <!-- Optional fonts. If offline, the system font stack in css is used. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <noscript
+      ><p style="padding: 2rem; text-align: center">
+        JavaScript is required to view this website. / يلزم تفعيل جافاسكربت لعرض
+        هذا الموقع.
+      </p></noscript
+    >
+
+    <!-- Loader -->
+    <div id="loader" class="loader" role="status" aria-live="polite">
+      <div class="loader-ring"></div>
+      <span class="sr-only" data-i18n="common.loading">Loading</span>
+    </div>
+
+    <!-- Animated background -->
+    <div class="bg" aria-hidden="true">
+      <span class="blob b1"></span><span class="blob b2"></span
+      ><span class="blob b3"></span>
+      <span class="grid-lines"></span>
+    </div>
+
+    <a class="skip-link" href="#main" data-i18n="nav.home">Home</a>
+
+    <!-- Floating navigation -->
+    <header class="nav-wrap" id="top">
+      <nav
+        class="nav glass"
+        data-i18n-aria="nav.main"
+        aria-label="Main navigation"
+      >
+        <a class="brand" href="#home" aria-label="Home">
+          <span class="brand-mark" data-icon="code"></span>
+          <span class="brand-name" data-bind="name"></span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li class="nav-indicator" aria-hidden="true"></li>
+          <li>
+            <a
+              class="nav-link"
+              href="#home"
+              data-section="home"
+              data-i18n="nav.home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="#about"
+              data-section="about"
+              data-i18n="nav.about"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="#skills"
+              data-section="skills"
+              data-i18n="nav.skills"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="#projects"
+              data-section="projects"
+              data-i18n="nav.projects"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="#certificates"
+              data-section="certificates"
+              data-i18n="nav.certificates"
+              >Certificates</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="#contact"
+              data-section="contact"
+              data-i18n="nav.contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <div class="nav-actions">
+          <div
+            class="lang-switch"
+            role="group"
+            data-i18n-aria="nav.language"
+            aria-label="Language"
+          >
+            <button type="button" data-lang="en" aria-pressed="true">EN</button>
+            <button type="button" data-lang="ar" aria-pressed="false">
+              AR
+            </button>
+          </div>
+          <button
+            class="burger"
+            id="burger"
+            type="button"
+            aria-expanded="false"
+            aria-controls="navLinks"
+            data-i18n-aria="nav.menu"
+            aria-label="Open menu"
+          >
+            <span data-icon="menu"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- ================= HERO ================= -->
+     <section class="hero" id="home" aria-labelledby="heroTitle">
+        <canvas id="particles" aria-hidden="true"></canvas>
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <span class="eyebrow reveal" data-i18n="hero.eyebrow"
+              >Welcome to my portfolio</span
+            >
+            <h1 id="heroTitle" class="hero-title reveal">
+              <span class="hero-hello" data-i18n="hero.greeting"
+                >Hello, I'm</span
+              >
+              <span class="grad-text" data-bind="name"></span>
+            </h1>
+            <p class="hero-role reveal">
+              <span id="typed"></span
+              ><span class="caret" aria-hidden="true"></span>
+            </p>
+            <p class="hero-intro reveal" data-bind="intro"></p>
+            <div class="hero-cta reveal">
+              <a class="btn btn-primary" href="#projects"
+                ><span data-i18n="hero.viewProjects">View Projects</span
+                ><span class="flip" data-icon="arrow"></span
+              ></a>
+              <a class="btn btn-ghost" href="#contact"
+                ><span data-i18n="hero.contactMe">Contact Me</span></a
+              >
+            </div>
+            <ul class="social-row reveal" id="heroSocial"></ul>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="photo-wrap" data-tilt>
+              <span class="photo-ring" aria-hidden="true"></span>
+              <div class="photo-frame">
+                <img
+                  id="heroPhoto"
+                  data-fallback="profile"
+                  alt=""
+                  width="600"
+                  height="600"
+                  decoding="async"
+                />
+              </div>
+              <div class="floats" id="heroFloats" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#about" aria-label="Scroll"
+          ><span></span
+        ></a>
+      </section>
+
+      <!-- ================= ABOUT ================= -->
+     <section class="section" id="about" aria-labelledby="aboutTitle">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="eyebrow" data-i18n="about.eyebrow">About</span>
+            <h2 id="aboutTitle" data-i18n="about.title">About Me</h2>
+          </header>
+
+          <div class="about-grid">
+            <aside class="about-card glass reveal" data-tilt>
+              <div class="about-photo">
+                <img
+                  id="aboutPhoto"
+                  data-fallback="profile"
+                  alt=""
+                  width="600"
+                  height="600"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <h3 data-bind="name"></h3>
+              <p class="about-title" data-bind="title"></p>
+            </aside>
+
+            <div class="about-body">
+              <p class="bio reveal" data-bind="bio"></p>
+              <div class="about-cols">
+                <div class="glass pad reveal">
+                  <h3 class="card-h">
+                    <span data-icon="grad"></span
+                    ><span data-i18n="about.education">Education</span>
+                  </h3>
+                  <ul class="timeline" id="aboutEdu"></ul>
+                </div>
+                <div class="glass pad reveal">
+                  <h3 class="card-h">
+                    <span data-icon="briefcase"></span
+                    ><span data-i18n="about.experience">Experience</span>
+                  </h3>
+                  <ul class="timeline" id="aboutExp"></ul>
+                </div>
+              </div>
+              <div class="glass pad reveal">
+                <h3 class="card-h">
+                  <span data-icon="heart"></span
+                  ><span data-i18n="about.interests">Interests</span>
+                </h3>
+                <ul class="chips" id="aboutInterests"></ul>
+              </div>
+            </div>
+          </div>
+
+          <ul class="stats" id="statsGrid"></ul>
+        </div>
+      </section>
+
+      <!-- ================= SKILLS ================= -->
+      <section class="section" id="skills" aria-labelledby="skillsTitle">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="eyebrow" data-i18n="skills.eyebrow">Skills</span>
+            <h2 id="skillsTitle" data-i18n="skills.title">Technical Skills</h2>
+            <p data-i18n="skills.subtitle">
+              Technologies and tools I work with.
+            </p>
+          </header>
+          <div class="skills-grid" id="skillsGrid"></div>
+        </div>
+      </section>
+
+      <!-- ================= PROJECTS ================= -->
+      <section class="section" id="projects" aria-labelledby="projectsTitle">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="eyebrow" data-i18n="projects.eyebrow">Work</span>
+            <h2 id="projectsTitle" data-i18n="projects.title">Projects</h2>
+            <p data-i18n="projects.subtitle">
+              A selection of things I have built.
+            </p>
+          </header>
+          <div
+            class="filters reveal"
+            id="projectFilters"
+            role="group"
+            data-i18n-aria="projects.filters"
+            aria-label="Project categories"
+          ></div>
+          <div class="cards" id="projectsGrid"></div>
+        </div>
+      </section>
+
+      <!-- ================= CERTIFICATES ================= -->
+      <section class="section" id="certificates" aria-labelledby="certTitle">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="eyebrow" data-i18n="certs.eyebrow">Achievements</span>
+            <h2 id="certTitle" data-i18n="certs.title">Certificates</h2>
+            <p data-i18n="certs.subtitle">Courses and credentials.</p>
+          </header>
+          <div class="cards cert-cards" id="certGrid"></div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+      <section class="section" id="contact" aria-labelledby="contactTitle">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="eyebrow" data-i18n="contact.eyebrow">Contact</span>
+            <h2 id="contactTitle" data-i18n="contact.title">Get In Touch</h2>
+            <p data-i18n="contact.subtitle">
+              Have a project or an opportunity in mind? Send a message.
+            </p>
+          </header>
+
+          <div class="contact-grid">
+            <form
+              class="glass pad contact-form reveal"
+              id="contactForm"
+              novalidate
+            >
+              <div class="field">
+                <label for="cName" data-i18n="contact.name">Name</label>
+                <input
+                  id="cName"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  aria-describedby="cNameErr"
+                />
+                <span class="err" id="cNameErr" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="cEmail" data-i18n="contact.email">Email</label>
+                <input
+                  id="cEmail"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  dir="ltr"
+                  aria-describedby="cEmailErr"
+                />
+                <span class="err" id="cEmailErr" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="cSubject" data-i18n="contact.subject"
+                  >Subject</label
+                >
+                <input
+                  id="cSubject"
+                  name="subject"
+                  type="text"
+                  aria-describedby="cSubjectErr"
+                />
+                <span class="err" id="cSubjectErr" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="cMessage" data-i18n="contact.message"
+                  >Message</label
+                >
+                <textarea
+                  id="cMessage"
+                  name="message"
+                  rows="5"
+                  aria-describedby="cMessageErr"
+                ></textarea>
+                <span class="err" id="cMessageErr" role="alert"></span>
+              </div>
+              <!-- honeypot against bots -->
+              <input
+                class="hp"
+                type="text"
+                name="website"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+              />
+              <button class="btn btn-primary" type="submit" id="sendBtn">
+                <span id="sendLabel" data-i18n="contact.send">Send Message</span
+                ><span class="flip" data-icon="send"></span>
+              </button>
+              <p
+                class="form-status"
+                id="formStatus"
+                role="status"
+                aria-live="polite"
+              ></p>
+            </form>
+
+            <aside class="contact-side">
+              <div class="glass pad reveal">
+                <h3 class="card-h">
+                  <span data-icon="mail"></span
+                  ><span data-i18n="contact.emailLabel">Email</span>
+                </h3>
+                <div id="contactEmail" class="contact-email" dir="ltr"></div>
+              </div>
+              <div class="glass pad reveal">
+                <h3 class="card-h">
+                  <span data-icon="link"></span
+                  ><span data-i18n="contact.findMe">Find me online</span>
+                </h3>
+                <ul class="social-list" id="contactSocial"></ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <strong data-bind="name"></strong>
+          <span data-bind="title"></span>
+        </div>
+        <nav
+          class="footer-links"
+          data-i18n-aria="footer.links"
+          aria-label="Quick links"
+          id="footerLinks"
+        ></nav>
+        <ul class="social-row" id="footerSocial"></ul>
+        <button
+          class="to-top"
+          id="toTop"
+          type="button"
+          data-i18n-aria="footer.backToTop"
+          aria-label="Back to top"
+        >
+          <span data-icon="up"></span>
+        </button>
+      </div>
+      <p class="copyright">
+        <span>&copy; <span id="year"></span></span>
+        <span data-bind="name"></span> —
+        <span data-i18n="footer.rights">All rights reserved.</span>
+      </p>
+    </footer>
+
+    <!-- Project dialog -->
+    <dialog id="projectDialog" class="dlg" aria-labelledby="pdTitle">
+      <div class="dlg-card glass-solid">
+        <button
+          class="dlg-close"
+          type="button"
+          data-close
+          data-i18n-aria="common.close"
+          aria-label="Close"
+        >
+          <span data-icon="x"></span>
+        </button>
+        <div class="dlg-media">
+          <img
+            id="pdImg"
+            data-fallback="project"
+            alt=""
+            width="800"
+            height="500"
+            decoding="async"
+          />
+        </div>
+        <div class="dlg-body">
+          <span class="tag" id="pdCat"></span>
+          <h3 id="pdTitle"></h3>
+          <p id="pdDesc"></p>
+          <h4 data-i18n="projects.technologies">Technologies</h4>
+          <ul class="chips" id="pdTech"></ul>
+          <div class="card-actions" id="pdActions"></div>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Certificate lightbox -->
+    <dialog id="certDialog" class="dlg dlg-wide" aria-labelledby="cdTitle">
+      <div class="dlg-card glass-solid">
+        <button
+          class="dlg-close"
+          type="button"
+          data-close
+          data-i18n-aria="common.close"
+          aria-label="Close"
+        >
+          <span data-icon="x"></span>
+        </button>
+        <div class="dlg-media cert-media">
+          <img id="cdImg" data-fallback="certificate" alt="" decoding="async" />
+        </div>
+        <div class="dlg-body">
+          <h3 id="cdTitle"></h3>
+          <p class="meta">
+            <span data-i18n="certs.issuer">Issued by</span>:
+            <strong id="cdIssuer"></strong>
+          </p>
+          <p class="meta">
+            <span data-i18n="certs.date">Date</span>:
+            <strong id="cdDate"></strong>
+          </p>
+          <p id="cdDesc"></p>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="js/data.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
