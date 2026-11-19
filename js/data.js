@@ -158,7 +158,7 @@ social: [
         ar: "تطوير بوابة إلكترونية متكاملة لإدارة عيادات الأسنان لتنظيم سير عمل المرضى، مواعيد الأطباء، والسجلات الطبية. تم بناؤه باستخدام PHP و MySQL و Bootstrap 5 لتقديم تجربة مستخدم آمنة، متجاوبة، وسهلة الاستخدام.",
       },
       tech: ["PHP", "MySQL", "Bootstrap 5", "JavaScript", "HTML5", "CSS3"],
-      image: "../assets/images/اسنان.png",
+      image: "/assets/images/اسنان.png",
       links: { 
         demo: "https://smilecare-demo.infinityfree.io/signup.php", 
         source: "" 
