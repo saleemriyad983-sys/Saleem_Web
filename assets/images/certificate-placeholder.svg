@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 566" role="img" aria-label="Certificate image placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c1c44"/>
+      <stop offset="1" stop-color="#060c22"/>
+    </linearGradient>
+    <linearGradient id="fg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4cc9ff"/>
+      <stop offset="1" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="566" fill="url(#bg)"/>
+  <rect x="60" y="50" width="680" height="466" rx="14" fill="none" stroke="url(#fg)" stroke-width="5" opacity=".85"/>
+  <rect x="82" y="72" width="636" height="422" rx="8" fill="none" stroke="#3b82f6" stroke-width="1.5" opacity=".45"/>
+  <rect x="250" y="130" width="300" height="20" rx="10" fill="#4cc9ff" opacity=".5"/>
+  <rect x="190" y="180" width="420" height="12" rx="6" fill="#3b82f6" opacity=".3"/>
+  <rect x="220" y="210" width="360" height="12" rx="6" fill="#3b82f6" opacity=".3"/>
+  <rect x="150" y="410" width="170" height="10" rx="5" fill="#3b82f6" opacity=".35"/>
+  <circle cx="400" cy="330" r="46" fill="none" stroke="url(#fg)" stroke-width="5"/>
+  <path d="M376 366l-16 58 40-20 40 20-16-58" fill="none" stroke="url(#fg)" stroke-width="5" stroke-linejoin="round"/>
+</svg>
