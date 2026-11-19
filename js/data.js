@@ -158,7 +158,7 @@ social: [
         ar: "تطوير بوابة إلكترونية متكاملة لإدارة عيادات الأسنان لتنظيم سير عمل المرضى، مواعيد الأطباء، والسجلات الطبية. تم بناؤه باستخدام PHP و MySQL و Bootstrap 5 لتقديم تجربة مستخدم آمنة، متجاوبة، وسهلة الاستخدام.",
       },
       tech: ["PHP", "MySQL", "Bootstrap 5", "JavaScript", "HTML5", "CSS3"],
-      image: "../assets/images/images.jpg",
+      image: "/assets/images/images.jpg",
       links: { 
         demo: "https://smilecare-demo.infinityfree.io/signup.php", 
         source: "" 
@@ -177,7 +177,7 @@ social: [
         ar: "تطوير موقع متجاوب لمطعم سليم برجر في غزة يتضمن قائمة طعام قابلة للبحث والفرز، عروضاً حصرية، تقييمات العملاء، قسم حجز الطاولات، خطوات إتمام الطلب، والطلب عبر واتساب مع واجهة عربية متكاملة.",
       },
       tech: ["HTML5", "CSS3", "JavaScript", "WhatsApp API"],
-     image: "assets/images/images.jpg",
+      image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=700&fit=crop",
       links: {
         demo: "https://saleemriyad983-sys.github.io/-/",
         source: "https://github.com/saleemriyad983-sys/-",
