@@ -164,18 +164,24 @@ social: [
         source: "" 
       },
     },
-    {
+   {
       id: "project-02",
-      category: "backend",
-      title: { en: "Project 02", ar: "المشروع 02" },
-      description: { en: "Short project description", ar: "وصف مختصر للمشروع" },
-      details: {
-        en: "Full project details: goals, your role, challenges, results.",
-        ar: "تفاصيل المشروع: الأهداف، دورك، التحديات، النتائج.",
+      category: "frontend",
+      title: { en: "Saleem Burger", ar: "سليم برجر" },
+      description: {
+        en: "Interactive restaurant web application with menu browsing, shopping cart, table booking, and WhatsApp ordering.",
+        ar: "موقع مطعم تفاعلي لعرض القائمة، سلة المشتريات، حجز الطاولات، والطلب المباشر عبر واتساب.",
       },
-      tech: ["PHP", "MySQL"],
-      image: "",
-      links: { demo: "", source: "" },
+      details: {
+        en: "Built a responsive restaurant ordering website featuring a searchable and sortable menu, exclusive offers, customer reviews, table reservation section, multi-step checkout flow, and WhatsApp order integration in Gaza.",
+        ar: "تطوير موقع متجاوب لمطعم سليم برجر في غزة يتضمن قائمة طعام قابلة للبحث والفرز، عروضاً حصرية، تقييمات العملاء، قسم حجز الطاولات، خطوات إتمام الطلب، والطلب عبر واتساب مع واجهة عربية متكاملة.",
+      },
+      tech: ["HTML5", "CSS3", "JavaScript", "WhatsApp API"],
+      image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=700&fit=crop",
+      links: {
+        demo: "https://saleemriyad983-sys.github.io/-/",
+        source: "https://github.com/saleemriyad983-sys/-",
+      },
     },
     {
       id: "project-03",
