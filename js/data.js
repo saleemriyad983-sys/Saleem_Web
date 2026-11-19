@@ -142,7 +142,7 @@ social: [
    * image : "assets/images/projects/my-project.png"  ("" = placeholder)
    * links : leave "" for no link (button shows disabled)                  */
   projects: [
- {
+   {
       id: "smilecare-dental-system",
       category: "web",
       title: { 
