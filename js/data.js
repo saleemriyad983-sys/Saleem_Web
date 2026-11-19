@@ -177,7 +177,7 @@ social: [
         ar: "تطوير موقع متجاوب لمطعم سليم برجر في غزة يتضمن قائمة طعام قابلة للبحث والفرز، عروضاً حصرية، تقييمات العملاء، قسم حجز الطاولات، خطوات إتمام الطلب، والطلب عبر واتساب مع واجهة عربية متكاملة.",
       },
       tech: ["HTML5", "CSS3", "JavaScript", "WhatsApp API"],
-      image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=700&fit=crop",
+     image: "/assets/images/images.jpg",
       links: {
         demo: "https://saleemriyad983-sys.github.io/-/",
         source: "https://github.com/saleemriyad983-sys/-",
